@@ -139,6 +139,7 @@ use App\Http\Livewire\Test\TestComponent;
 use App\Http\Livewire\Test\TestEditComponent;
 use App\Http\Livewire\Project\BusinessPartnerComponent;
 use App\Http\Livewire\Project\Class\ClassDetailComponent;
+use App\Http\Controllers\MailController;
 
 
 // use App\Http\Livewire\Admin\Auth\LoginComponent;
@@ -188,6 +189,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/test', function () {
 Route::get('/foo', function () {
     Artisan::call('storage:link');
     });
+
+    Route::post('/send' , [MailController::class , 'index']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
