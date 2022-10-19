@@ -1,0 +1,5 @@
+if(jQuery(".skillbar").length){jQuery(window).scroll(function(){jQuery('.skillbar').each(function(){jQuery(this).find('.skillbar-bar').animate({width:jQuery(this).attr('data-percent')},6000)})})}
+jQuery(window).load(function($){if(jQuery(".portfolio-filter").length){jQuery('.portfolioFilter a').click(function(){jQuery('.portfolioFilter .current').removeClass('current');jQuery(this).addClass('current');var selector=jQuery(this).attr('data-filter');$container.isotope({filter:selector,animationOptions:{duration:750,easing:'linear',queue:!1}});return!1});var $container2=jQuery('.portfolio-list');$container2.isotope({filter:'*',animationOptions:{duration:750,easing:'linear',queue:!1}});jQuery('.portfolio-filter li').click(function(){jQuery('.portfolio-filter li').removeClass('active');jQuery(this).addClass('active');var selector=jQuery(this).attr('data-filter');$container2.isotope({filter:selector,animationOptions:{duration:750,easing:'linear',queue:!1}});return!1})}
+jQuery('[data-toggle="tooltip"]').tooltip()
+if(jQuery(".counter").length){jQuery('.counter').counterUp({delay:20,time:2000})}})
+;
