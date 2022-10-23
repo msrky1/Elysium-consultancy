@@ -14,11 +14,7 @@ class SliderAddComponent extends Component
 
     use WithFileUploads;
    
-    public $title; 
-    public $title2; 
-    public $title3; 
-    public $title4; 
-    public $title5; 
+  
    
     public $image;
 
@@ -33,11 +29,7 @@ class SliderAddComponent extends Component
        {
            $slider = new Slider();
       
-           $slider->title = $this->title;
-           $slider->title2 = $this->title2;
-           $slider->title3 = $this->title3;
-           $slider->title4 = $this->title4;
-           $slider->title5 = $this->title5;
+        
          
     
       
@@ -45,11 +37,7 @@ class SliderAddComponent extends Component
            $this->image->storeAs('public/image', $imageName);
            $slider->image = $imageName; 
 
-           $notification = new Notification();
-           $notification->name = $this->title;
-           $notification->notification = 'Yeni Bir Slider Eklendi!';
-           $notification->color = 'info';
-           $notification->save();
+        
         
          
 

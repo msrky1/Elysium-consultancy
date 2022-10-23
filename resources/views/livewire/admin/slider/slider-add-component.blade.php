@@ -22,32 +22,10 @@
                             @endif
                             <div class="app-card-body">
                                 <form wire:submit.prevent="addSlider()">
+                                    @csrf
                                     <div class="mb-3">
                                      
                                             
-
-
-                                        @csrf
-                                        <label for="setting-input-2" class="form-label">Başlık </label>:
-                                        <input type="text" name="title" class="form-control" wire:model="title"
-                                            required>
-                                        <div> @error('title')
-                                                {{ $message }}
-                                            @enderror </div>
-
-                                    </div>
-                                    <div class="mb-3" wire:ignore>
-                                        <label for="setting-input-2" class="form-label">İçerik </label>:
-                                        <textarea wire:model.defer="description" class="form-control" id="description" name="description">{!! $description !!}
-                                        
-                                        </textarea>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="setting-input-3" class="form-label">Link</label>:
-                                        <input type="text" name="link" class="form-control" id="setting-input-3"
-                                            wire:model="link" required>
-                                    </div>
-                                    
                                    
                                     <div class="mb-3">
                                         <input type="file" name="image" wire:model="image" />

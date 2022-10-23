@@ -209,9 +209,9 @@ Route::post('/sinav/basvurusu/olustur/{name}' , [BasvuruController::class , 'pdf
 
 
 Route::get('/' , HomeComponent::class);
-Route::get('/mesa/login' , LoginComponent::class);
+Route::get('/eylsium/login' , LoginComponent::class);
 Route::get('/popup' , PopupComponent::class);
-Route::get('/insan-kaynaklari' , HumanResourcesComponent::class);
+Route::get('/basvur' , HumanResourcesComponent::class);
 Route::get('/belge-ve-sertifikalarımız' , CertificaComponent::class);
 Route::get('/galeri' , GaleryComponent::class);
 Route::get('/hakkimizda' , AboutComponent::class);  

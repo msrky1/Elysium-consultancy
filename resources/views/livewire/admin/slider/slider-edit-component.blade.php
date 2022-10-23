@@ -25,41 +25,7 @@
 
                                     @csrf
                                     
-                                    <div class="mb-3">
-                                        <label for="setting-input-2" class="form-label">Başlık </label>:
-                                        <input type="text" name="title" class="form-control" wire:model="title"
-                                            required>
-
-
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="setting-input-2" class="form-label">Başlık </label>:
-                                        <input type="text" name="title" class="form-control" wire:model="title2"
-                                            required>
-
-
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="setting-input-2" class="form-label">Başlık </label>:
-                                        <input type="text" name="title" class="form-control" wire:model="title3"
-                                            required>
-
-
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="setting-input-2" class="form-label">Başlık </label>:
-                                        <input type="text" name="title" class="form-control" wire:model="title4"
-                                            required>
-
-
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="setting-input-2" class="form-label">Başlık </label>:
-                                        <input type="text" name="title" class="form-control" wire:model="title5"
-                                            required>
-
-
-                                    </div>
+                                 
 
                                     <div class="mb-3">
                                         <input type="file" name="image" wire:model="newimage" />

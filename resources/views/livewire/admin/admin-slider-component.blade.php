@@ -37,12 +37,8 @@
                                         <thead>
                                             <tr>
                                                 <th class="cell">id</th>
-                                                <th class="cell">Resim</th>
-                                                <th class="cell">Yazı 1</th>
-                                                <th class="cell">Yazı 2 </th>
-                                                <th class="cell">Yazı 3 </th>
-                                                <th class="cell">Yazı 4</th>
-                                                <th class="cell">Yazı 5 </th>
+                                                <th class="cell">Görsel</th>
+                                         
                                                 <th class="cell">Aksiyonlar</th>
                                                 <th class="cell"></th>
                                             </tr>
@@ -55,18 +51,6 @@
                                                             src="{{ asset('storage/image') }}/{{ $s->image }}"
                                                             ></td>
 
-                                                    <td class="cell"><span class="truncate">{{ $s->title }}</span>
-                                                    </td>
-
-                                                    <td class="cell"><span class="truncate">{{ $s->title2 }}</span>
-                                                    </td>
-
-                                                    <td class="cell"><span class="truncate">{{ $s->title3 }}</span>
-                                                    </td>
-
-                                                    <td class="cell"><span class="truncate">{{ $s->title4 }}</span>
-                                                    </td>
-                                                    <td class="cell"><span class="truncate">{{ $s->title5 }}</span>
                                                     </td>
                                                     <td class="cell"><a class="btn-sm app-btn-secondary"
                                                             href="{{ route('admin.slider.edit', ['slider_id' => $s->id]) }}">Düzenle
