@@ -20,6 +20,7 @@ class SystemDetailComponent extends Component
     public function render()
     {
 
+        Carbon::setLocale('tr');
 
         $system = System::where('slug', $this->slug)->first();
 

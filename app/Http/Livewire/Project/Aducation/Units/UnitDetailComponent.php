@@ -21,6 +21,8 @@ class UnitDetailComponent extends Component
     {
 
 
+        Carbon::setLocale('tr');
+
         $unit = Unit::where('slug', $this->slug)->first();
 
         return view('livewire.project.aducation.units.unit-detail-component' , ['unit' =>  $unit])->layout('layouts.base');

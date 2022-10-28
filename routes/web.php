@@ -209,7 +209,7 @@ Route::post('/sinav/basvurusu/olustur/{name}' , [BasvuruController::class , 'pdf
 
 
 Route::get('/' , HomeComponent::class);
-Route::get('/eylsium/login' , LoginComponent::class);
+Route::get('/elysium/login' , LoginComponent::class);
 Route::get('/popup' , PopupComponent::class);
 Route::get('/basvur' , HumanResourcesComponent::class);
 Route::get('/belge-ve-sertifikalarımız' , CertificaComponent::class);

@@ -36,6 +36,8 @@ class SocialDetailComponent extends Component
         $blogRecent = Blog::paginate(5);
         $category = Category::paginate(5);
         
+        Carbon::setLocale('tr');
+
         $blog = Social::where('slug' , $this->slug)->first();
         return view('livewire.project.aducation.social.social-detail-component', [
             'blog' => $blog , 'blogRecent' => $blogRecent, 'category' => $category

@@ -5,6 +5,8 @@ namespace App\Http\Livewire\Project;
 use Livewire\Component;
 use App\Models\Whatdo;
 use App\Models\Visit;
+use Carbon\Carbon;
+
 
 class WhatdoComponent extends Component
 {
@@ -13,6 +15,9 @@ class WhatdoComponent extends Component
         $visit = Visit::first('id');
     
         $visit->increment('views');
+
+        Carbon::setLocale('tr');
+
         $whatdo = Whatdo::all();
         return view('livewire.project.whatdo-component', ['whatdo' => $whatdo])->layout('layouts.base');
     }
