@@ -215,7 +215,7 @@ Route::get('/basvur' , HumanResourcesComponent::class);
 Route::get('/belge-ve-sertifikalarımız' , CertificaComponent::class);
 Route::get('/galeri' , GaleryComponent::class);
 Route::get('/hakkimizda' , AboutComponent::class);  
-Route::get('/sss' , QuestionsComponent::class);
+ Route::get('/sss' , QuestionsComponent::class);
  Route::get('/duyurular' , WhatdoComponent::class);
  Route::get('/kurumsal/egitim-kadromuz' , TeamComponent::class);
  Route::get('/haberler' , BlogComponent::class);

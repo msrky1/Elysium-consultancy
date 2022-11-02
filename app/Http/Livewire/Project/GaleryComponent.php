@@ -8,12 +8,16 @@ use App\Models\Image;
 use App\Models\Video;
 use App\Models\GaleryCategory;
 use App\Models\Visit;
+use  Illuminate\Support\Facades\DB;
+
 
 class GaleryComponent extends Component
 {
     public function render()
     { 
         $id = 6;
+        // DB::table('galeries')->truncate();
+
 
         $visit = Visit::where('id' , $id)->first('id');
     
