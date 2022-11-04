@@ -25,16 +25,16 @@
     <link rel="stylesheet" href="{{asset('assets')}}/css/jquery.fancybox.css" />
     <link rel="stylesheet" href="{{asset('assets')}}/css/chosen.min.css" />
     <link rel="stylesheet" href="{{asset('assets')}}/css/style.css" />
+    <link rel="stylesheet" href="{{asset('assets')}}/css/popup.css" />
   </head>
   <body>
     <!-- start per-loader -->
-    {{-- <div class="loader-container">
+    <div class="loader-container">
       <div class="loader-ripple">
         <div></div>
         <div></div>
       </div>
-    </div> --}}
-    <!-- scrollToTop ending here -->
+    </div>    <!-- scrollToTop ending here -->
     
     <livewire:project.menu-component />
 

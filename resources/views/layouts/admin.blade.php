@@ -162,7 +162,7 @@
                             <!--//nav-link-->
                         </li> 
 
-                        {{-- <li class="nav-item">
+                       <li class="nav-item">
                             <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
                             <a class="nav-link {{ request()->is('admin/popup*') ? 'active' : '' }}"
                                 href="/admin/popup">
@@ -176,7 +176,7 @@
 
                             </a>
                             <!--//nav-link-->
-                        </li>   --}}
+                        </li>   
                         {{-- <li class="nav-item">
                             <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
                             <a class="nav-link {{ request()->is('admin/bursluluk*') ? 'active' : '' }}"

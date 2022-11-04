@@ -225,7 +225,7 @@ Route::get('/hakkimizda' , AboutComponent::class);
  Route::get('/sinif/detay/{classroom_id}' , ClassDetailComponent::class)->name('class.detail');
 
 
-  Route::get('/egitim-sistemleri/{slug}', SystemDetailComponent::class)->name('system.detail');
+  Route::get('/hizmetlerimiz/{slug}', SystemDetailComponent::class)->name('system.detail');
   Route::get('/egitim-birimleri/{slug}', UnitDetailComponent::class)->name('unit.detail');
   Route::get('/duyuru/{slug}', WhatdoDetailComponent::class)->name('whatdo.detail');
   Route::get('/haber/{slug}', BlogDetailComponent::class)->name('blog.detail');
