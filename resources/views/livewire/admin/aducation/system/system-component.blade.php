@@ -7,7 +7,7 @@
 
                 <div class="row g-3 mb-4 align-items-center justify-content-between">
                     <div class="col-auto">
-                        <h1 class="app-page-title mb-0">Eğitim Sistemi Yönetimi</h1>
+                        <h1 class="app-page-title mb-0">Hizmetlerimiz</h1>
                     </div>
 
                 </div>
@@ -17,7 +17,7 @@
                 <div class="col-auto">
                     <a class="btn app-btn-primary" href="{{ route('admin.system.add') }}">
 
-                        Eğtim Sistemine Yeni Ekle
+                      Yeni Hizmet Ekleyin
                     </a>
                 </div>
                 @if (Session::has('message'))

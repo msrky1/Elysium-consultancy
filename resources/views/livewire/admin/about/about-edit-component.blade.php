@@ -37,16 +37,13 @@
                                                 <div> @error('name'){{ $message }}@enderror </div>
 
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="setting-input-2" class="form-label">Ana Başlık </label>:
-                                        <input type="text" name="title_one" class="form-control" id="setting-input-2" 
-                                            wire:model="title_one" required>
+                                  
+                                    <div class="mb-3" wire:ignore>
+                                        <label for="setting-input-2" class="form-label">İçerik </label>:
+                                        <textarea wire:model='description' id="description"></textarea>
+
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="setting-input-3" class="form-label">İçerik</label>:
-                                        <input type="text-area" name="description" class="form-control" id="setting-input-3"
-                                            wire:model="description" >
-                                    </div>
+
                                     
 
                                     <button class="btn app-btn-primary"  type="submit">
@@ -62,7 +59,34 @@
                         <!--//app-card-->
                     </div>
                 </div>
+                <script>
+                    jQuery(document).ready(function() {
 
+                        $('#description').summernote({
+                            height: 350, // set editor height
+                            minHeight: null, // set minimum height of editor
+                            maxHeight: null, // set maximum height of editor
+                            focus: false,
+
+                            callbacks: {
+                                onChange: function(contents, $editable) {
+                                    @this.set('description', contents);
+                                }
+                            }
+                            // set focus to editable area after initializing summernote
+
+                        });
+
+
+                    });
+
+                    window.edit = function() {
+                            $(".click2edit").summernote()
+                        },
+                        window.save = function() {
+                            $(".click2edit").summernote('destroy');
+                        }
+                </script>
 			
                 <!--//row-->
 

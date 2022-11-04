@@ -197,6 +197,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('/thankyou' , ThankyouComponent::class)->name('thankyou');
+Route::get('/mesaj-basarili' , ThankyouComponent::class)->name('thankyou-mesaj');
 Route::get('/basvurular' , SearchComponent::class );
 // Route::get('/basvurular/olustur/{name}' , [BasvuruController::class, 'pdfGenerate' ])->name('generate');
 

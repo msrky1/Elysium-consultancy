@@ -49,7 +49,7 @@ class UnitsAddComponent extends Component
 
    
 
-    session()->flash('message' ,'Eğitim Sistemine Başarıyla Eklendi! ');
+    session()->flash('message' ,'KVKK Başarıyla Eklendi! ');
 
 
   }

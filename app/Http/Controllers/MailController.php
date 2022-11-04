@@ -33,7 +33,7 @@ class MailController extends Controller
      try {
          
         Mail::to('msrky1@gmail.com')->send(new MailNotify($data));
-        return response()->json(['Your Email Has Been Successfully Sent']);
+        return redirect('/thankyou');
     
      }catch (Exeption $th) {
     
@@ -42,4 +42,6 @@ class MailController extends Controller
         
      }
        }
+
+      
 }

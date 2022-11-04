@@ -15,7 +15,7 @@
                             <div class="row gx-5 gy-3">
                                 <div class="col-12 col-lg-9">
 
-                                    <div> Mesa Vip Koleji</div>
+                                    <div>Elysium Danışmanlık</div>
                                 </div>
                                 <!--//col-->
                                 <div class="col-12 col-lg-3">

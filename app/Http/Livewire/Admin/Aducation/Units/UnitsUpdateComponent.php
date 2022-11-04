@@ -62,7 +62,7 @@ class UnitsUpdateComponent extends Component
 
        $blog->save();
 
-       session()->flash('message' ,'Eğitim Birimi Başarıyla Güncellendi ');
+       session()->flash('message' ,'KVKK Başarıyla Güncellendi ');
 
 
 

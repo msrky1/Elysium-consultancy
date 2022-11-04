@@ -50,7 +50,7 @@ class SystemAddComponent extends Component
 
    
 
-    session()->flash('message' ,'Eğitim Sistemine Başarıyla Eklendi! ');
+    session()->flash('message' ,'Hizmet Başarıyla Eklendi! ');
 
 
   }

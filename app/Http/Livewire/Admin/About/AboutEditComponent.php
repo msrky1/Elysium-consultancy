@@ -9,7 +9,7 @@ class AboutEditComponent extends Component
 {
 
     public $title;
-    public $title_one;
+
     public $description;
 
     public $about_id;
@@ -21,7 +21,6 @@ class AboutEditComponent extends Component
         $about = About::where('id' , $about_id)->first();
 
         $this->title = $about->title;
-        $this->title_one = $about->title_one;
         $this->description = $about->description;
         $this->about_id = $about->id;
         
@@ -36,7 +35,7 @@ class AboutEditComponent extends Component
     {
             $about = About::find($this->about_id);
             $about->title = $this->title;
-            $about->title_one = $this->title_one;
+          
             $about->description = $this->description;
             $about->save();
 

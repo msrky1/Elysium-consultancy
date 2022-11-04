@@ -63,7 +63,7 @@ class SystemUpdateComponent extends Component
 
        $blog->save();
 
-       session()->flash('message' ,'Eğitim Sistemi Başarıyla Güncellendi ');
+       session()->flash('message' ,'Hizmet Başarıyla Güncellendi ');
 
 
 

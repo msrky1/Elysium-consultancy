@@ -4,12 +4,12 @@
 
         <div class="app-content pt-3 p-md-3 p-lg-4">
             <div class="container-xl">
-                <h1 class="app-page-title">Etkinlik</h1>
+                <h1 class="app-page-title">Hizmetler</h1>
                 <hr class="mb-4">
                 <div class="row g-4 settings-section">
                     <div class="col-12 col-md-4">
-                        <h3 class="section-title">Eğitim Birimlerini Düzenle</h3>
-                        <div class="section-intro">Eğitim Birimleri ögesini düzenleyin<a href="{{ route('admin.help') }}"><br>
+                        <h3 class="section-title">Hizmeti Düzenle</h3>
+                        <div class="section-intro">Hizmet ögesini düzenleyin<a href="{{ route('admin.help') }}"><br>
                                 Daha
                                 Fazla Öğren</a></div>
                     </div>
@@ -18,7 +18,7 @@
                             @if (Session::has('message'))
                                 <div class="alert alert-success">
                                     <strong>{{ Session::get('message') }}</strong> <a style="color: red"
-                                        href="{{ route('admin.system') }}"> Eğitim Birimlerini Görüntüle</a>
+                                        href="{{ route('admin.system') }}"> Hizmet ögesini düzenleyin</a>
                                 </div>
                             @endif
                             <div class="app-card-body">

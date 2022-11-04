@@ -12,28 +12,25 @@
                                 Daha
                                 Fazla Öğren</a></div>
                     </div>
+                 
                     <div class="col-12 col-md-8">
-                        <div class="app-card app-card-settings shadow-sm p-4">
+                        @foreach ($abouts as $e) <div class="app-card app-card-settings shadow-sm p-4">
 
                             <div class="app-card-body">
                                 <form class="settings-form">
                                     <div class="mb-3">
-                                        <label for="setting-input-1" class="form-label">Ana Başlık </label>
+                                        <label for="setting-input-1" class="form-label">Başlık 1</label>
                               
-                                        @foreach ($abouts as $e)
+                               
                                             <div>
                                                 <label> {{ $e->title }}</label>
 
                                             </div>
+                                         
                                             <div class="mb-3">
-                                                <label for="setting-input-2" class="form-label">Ana Başlık </label>
+                                                <label for="setting-input-3" class="form-label">İçerik</label>:
                                                 <br>
-                                                <label> {{ $e->title_one }}</label>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="setting-input-3" class="form-label">Mail Adresi</label>:
-                                                <br>
-                                                <label> {{ $e->description }}</label>
+                                                <label> {!! $e->description !!}</label>
                                             </div>
                                             
                                         
@@ -46,9 +43,11 @@
 
                         </div>
                         <!--//app-card-->
+                        @endforeach
                     </div>
+                 
                 </div>
-                @endforeach
+            
                 <!--//row-->
 
 

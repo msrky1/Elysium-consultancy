@@ -122,7 +122,7 @@
                 <div class="app-branding">
                     <a class="app-logo" href="/admin/home"><img class="logo-icon mr-2"
                             src="{{ asset('admin') }}/assets/images/app-logo.svg" alt="logo"><span
-                            class="logo-text">Mesa Vip Koleji</span></a>
+                            class="logo-text">Elysium Danışmanlık</span></a>
 
                 </div>
                 <!--//app-branding-->
@@ -162,7 +162,7 @@
                             <!--//nav-link-->
                         </li> 
 
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
                             <a class="nav-link {{ request()->is('admin/popup*') ? 'active' : '' }}"
                                 href="/admin/popup">
@@ -176,7 +176,7 @@
 
                             </a>
                             <!--//nav-link-->
-                        </li>  
+                        </li>   --}}
                         {{-- <li class="nav-item">
                             <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
                             <a class="nav-link {{ request()->is('admin/bursluluk*') ? 'active' : '' }}"
@@ -255,7 +255,7 @@
 
                        
                         <!--//nav-item-->
-                        {{-- <li class="nav-item">
+                      <li class="nav-item">
                             <!--//clsBootstrap Icons: https://icons.getbootstrap.com/ -->
                             <a class="nav-link {{ request()->is('admin/about*') ? 'active' : '' }}"
                                 href="{{ route('admin.about') }}">
@@ -267,7 +267,7 @@
                                 <span class="nav-link-text">Hakkımızda</span>
                             </a>
                             <!--//nav-link-->
-                        </li> --}}
+                        </li> 
                         <li class="nav-item">
                             <!--//clsBootstrap Icons: https://icons.getbootstrap.com/ -->
                             <a class="nav-link {{ request()->is('admin/notification*') ? 'active' : '' }}"
@@ -312,7 +312,7 @@
                             </a>
                             <!--//nav-link-->
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <!--//clsBootstrap Icons: https://icons.getbootstrap.com/ -->
                             <a class="nav-link {{ request()->is('admin/video*') ? 'active' : '' }}"
                                 href="{{ route('admin.video') }}">
@@ -324,7 +324,7 @@
                                 <span class="nav-link-text">Video</span>
                             </a>
                             <!--//nav-link-->
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <!--//clsBootstrap Icons: https://icons.getbootstrap.com/ -->
                             <a class="nav-link {{ request()->is('admin/team*') ? 'active' : '' }}"
@@ -398,7 +398,7 @@
                                         <circle cx="3.5" cy="10.5" r=".5" />
                                     </svg>
                                 </span>
-                                <span class="nav-link-text">Sayfalar</span>
+                                <span class="nav-link-text">Haberler</span>
                                 <span class="submenu-arrow">
                                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -429,7 +429,7 @@
                             </div>
                         </li>
 
-                        <li class="nav-item has-submenu">
+                        {{-- <li class="nav-item has-submenu">
                             <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
                             <a class="nav-link submenu-toggle" href="#" data-toggle="collapse" data-target="#submenu-2"
                                 aria-expanded="false" aria-controls="submenu-1">
@@ -464,10 +464,10 @@
                                             class="submenu-link {{ request()->is('admin/social/add*') ? 'active' : '' }}"
                                             href="{{ route('admin.social.add') }}">Etkinlik Ekle</a></li>
                                     {{-- <li class="submenu-item"><a class="submenu-link"
-                                            href="{{ route('admin.setting') }}">Ayarlar</a></li> --}}
+                                            href="{{ route('admin.setting') }}">Ayarlar</a></li> 
                                 </ul>
-                            </div>
-                        </li>
+                            </div> 
+                        </li> --}}
                         <!--//nav-item-->
                         <li class="nav-item has-submenu">
                             <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
