@@ -15,7 +15,9 @@ class SliderEditComponent extends Component
     
     use WithFileUploads;
 
-  
+    public $title; 
+    public $description;
+    public $link;
     public $image;  
     public $newimage;
     public $slider_id;
@@ -25,12 +27,11 @@ class SliderEditComponent extends Component
     public function mount($slider_id) {
   
         $slider = Slider::where('id', $slider_id)->first();
-       
-      
-        
-       
+        $this->title =  $slider->title;
+        $this->description =  $slider->description;
         $this->image =  $slider->image;
- 
+        $this->title =  $slider->title;
+        $this->link =  $slider->link;
       
         $this->slider_id = $slider->id;
 
@@ -45,8 +46,10 @@ class SliderEditComponent extends Component
     public function updateSlider()
        {
             $slider = Slider::find($this->slider_id);      
-     
-     
+           $slider->title = $this->title;
+           $slider->description = $this->description;
+           $slider->link = $this->link;
+    
       
            if ($this->newimage){
             $imageName = Carbon::now()->timestamp. '.' . $this->newimage->extension();
@@ -59,7 +62,11 @@ class SliderEditComponent extends Component
 
            $slider->save();
            
-      
+        $notification = new Notification();
+        $notification->name = $this->title;
+        $notification->notification = 'Bir Slider Düzenlendi!';
+        $notification->color = 'info';
+        $notification->save();
 
            session()->flash('message' ,'Slider başarıyla Güncellendi ');
 

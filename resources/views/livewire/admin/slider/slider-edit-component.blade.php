@@ -22,26 +22,52 @@
                             @endif
                             <div class="app-card-body">
                                 <form wire:submit.prevent="updateSlider()">
+                                    <div class="mb-3">
+                                     
+                                            
 
-                                    @csrf
-                                    
-                                 
 
+                                        @csrf
+                                        <label for="setting-input-2" class="form-label">Başlık </label>:
+                                        <input type="text" name="title" class="form-control" wire:model="title"
+                                            required>
+                                        <div> @error('title')
+                                                {{ $message }}
+                                            @enderror </div>
+
+                                    </div>
+                                    <div class="mb-3" wire:ignore>
+                                        <label for="setting-input-2" class="form-label">İçerik </label>:
+                                        <textarea wire:model.defer="description" class="form-control" id="description" name="description">{!! $description !!}
+                                        
+                                        </textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="setting-input-3" class="form-label">Link</label>:
+                                        <input type="text" name="link" class="form-control" id="setting-input-3"
+                                            wire:model="link">
+                                    </div>
                                     <div class="mb-3">
                                         <input type="file" name="image" wire:model="newimage" />
                                     </div>
-
+                                   
                                     <div class="mb-3">
-
+                                   
                                         @if ($newimage)
-                                            <img src="{{ $newimage->temporaryUrl() }}" width="120">
+                                        <img src="{{$newimage->temporaryUrl()}}" width="120">
+
+                           
+                                            
                                         @else
-                                            <img src="{{ asset('storage/image') }}/{{ $image }}" width="120">
-                                        @endif
+
+                                        <img src="{{asset('storage/image')}}/{{$image}}" width="120">   
+
+                             
+                                    @endif
                                     </div>
                                     <div class="mb-3">
 
-
+                                   
                                     </div>
 
 

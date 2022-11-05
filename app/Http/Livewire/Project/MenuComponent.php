@@ -11,17 +11,21 @@ use App\Models\Social;
 use App\Models\Unit;
 use App\Models\System;
 use App\Models\Visit;
-
-
+use Illuminate\Http\Request;
+use Session;
 
 class MenuComponent extends Component
 { 
-
-    
+    public function setTarget(Request $request){
+        Session::put('target',$request->target);
+        return 1;
+      }
    
+  
 
     public function render()
     {
+        
         $whatdo = Whatdo::all();
 
            $setting = Setting::all();

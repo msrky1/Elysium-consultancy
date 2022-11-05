@@ -43,6 +43,7 @@ use App\Http\Livewire\Admin\PopUp\AdminPopupEditComponent;
 
 
 use App\Http\Livewire\Project\SearchComponent;
+use App\Http\Livewire\Project\MenuComponent;
 use App\Http\Livewire\Project\HumanResourcesComponent;
 
 
@@ -140,6 +141,7 @@ use App\Http\Livewire\Test\TestEditComponent;
 use App\Http\Livewire\Project\BusinessPartnerComponent;
 use App\Http\Livewire\Project\Class\ClassDetailComponent;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\ExampleController;
 
 
 // use App\Http\Livewire\Admin\Auth\LoginComponent;
@@ -186,6 +188,11 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/test', function () {
 
 
 */
+Route::get('/demo', [ExampleController::class , 'index']);
+
+Route::post('/setTarget', [MenuComponent::class , 'setTarget']);
+
+
 Route::get('/foo', function () {
     Artisan::call('storage:link');
     });

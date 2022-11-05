@@ -31,9 +31,14 @@ use App\Models\Visit;
 class HomeComponent extends Component
 {
 
+    public function setTarget(Request $request){
+        Session::put('target',$request->target);
+        return 1;
+      }
 
     public function render()
     {
+        
 
 
         Carbon::setLocale('tr');

@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
+        "akibtanjim/google-translate": "^1.0",
         "barryvdh/laravel-dompdf": "^1.0",
         "guzzlehttp/guzzle": "^7.2",
         "inertiajs/inertia-laravel": "^0.5.2",
@@ -35,8 +36,12 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
-        }
+            "App\\": "app/",
+            "Akib\\Translate\\": "vendor/akibtanjim/google-translate/src"
+        },
+        "files": [
+          "app/Helpers/Functions.php"
+        ]
     },
     "scripts": {
         "post-autoload-dump": [

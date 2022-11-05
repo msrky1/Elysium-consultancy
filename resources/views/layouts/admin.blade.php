@@ -367,7 +367,7 @@
                             </a>
                             <!--//nav-link-->
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <!--//clsBootstrap Icons: https://icons.getbootstrap.com/ -->
                             <a class="nav-link {{ request()->is('admin/units*') ? 'active' : '' }}"
                                 href="{{ route('admin.units') }}">
@@ -379,7 +379,7 @@
                                 <span class="nav-link-text">KVKK</span>
                             </a>
                             <!--//nav-link-->
-                        </li>
+                        </li> --}}
                        
 
                         <li class="nav-item has-submenu">

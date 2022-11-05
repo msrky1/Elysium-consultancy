@@ -46,7 +46,24 @@
     <!-- Footer Section Start Here -->
 
     <!-- Footer Section Ending Here -->
+   
+  <script type="text/javascript">
+    $('.target').on('change',function(){
+          var target = $(this).val();
+          $.ajax({
+              url:"{{url('/setTarget')}}",
+              type:"POST",
+              dataType:'json',
+              data:{"_token": "{{ csrf_token() }}","target":target},
+              success: function(data) {
+                location.reload();
+              },
+              error: function(e) {
 
+              }
+          });
+      });
+  </script>
        <!-- Template JS Files -->
     <script src="{{asset('assets')}}/js/jquery-3.4.1.min.js"></script>
     <script src="{{asset('assets')}}/js/jquery-ui.js"></script>

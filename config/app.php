@@ -178,6 +178,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\FortifyServiceProvider::class,
         App\Providers\JetstreamServiceProvider::class,
+        Akib\Translate\GoogleTranslateServiceProvider::class,
 
     ],
 
@@ -193,6 +194,8 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+
+        'TranslateText'=>Akib\Translate\Facades\GoogleTranslate::class,
         // ...
     ])->toArray(),
 

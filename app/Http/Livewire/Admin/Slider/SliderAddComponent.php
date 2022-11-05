@@ -13,9 +13,10 @@ class SliderAddComponent extends Component
 {
 
     use WithFileUploads;
-   
-  
-   
+    public $name;
+    public $title; 
+    public $description;
+    public $link;
     public $image;
 
 
@@ -29,15 +30,20 @@ class SliderAddComponent extends Component
        {
            $slider = new Slider();
       
-        
-         
+           $slider->title = $this->title;
+           $slider->description = $this->description;
+           $slider->link = $this->link;
     
       
            $imageName = Carbon::now()->timestamp. '.' . $this->image->extension();
            $this->image->storeAs('public/image', $imageName);
            $slider->image = $imageName; 
 
-        
+           $notification = new Notification();
+           $notification->name = $this->title;
+           $notification->notification = 'Yeni Bir Slider Eklendi!';
+           $notification->color = 'info';
+           $notification->save();
         
          
 
